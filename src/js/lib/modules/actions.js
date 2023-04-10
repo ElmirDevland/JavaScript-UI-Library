@@ -1,31 +1,30 @@
 import $ from '../core';
 
-$.prototype.on = function (eventName, callback) {
-  if (!eventName || !callback) {
-    return this;
-  }
-
+$.prototype.html = function (content) {
   for (let i = 0; i < this.length; i++) {
-    this[i].addEventListener(eventName, callback);
+    if (content) {
+      this[i].innerHTML = content;
+    } else {
+      return this[i].innerHTML;
+    }
   }
   return this;
 };
 
-$.prototype.removeEvent = function (eventName, callback) {
-  if (!eventName || !callback) {
-    return this;
-  }
+$.prototype.eq = function (i) {
+  Array.from(this).filter((e, index) => {
+    if (index !== i) delete this[index];
+  });
+  this[0] = this[i];
+  this.length = 1;
 
-  for (let i = 0; i < this.length; i++) {
-    this[i].removeEventListener(eventName, callback);
-  }
   return this;
 };
 
-$.prototype.click = function (handler) {
-  for (let i = 0; i < this.length; i++) {
-    if (handler) this[i].addEventListener('click', handler);
-    else this[i].click();
-  }
-  return this;
+$.prototype.index = function () {
+  const parent = this[0].parentNode;
+  const childs = [...parent.children];
+
+  const findMyIndex = (item) => item === this[0];
+  return childs.findIndex(findMyIndex);
 };

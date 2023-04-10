@@ -4,8 +4,17 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 20px;
+}
+
 button {
   width: 100px;
   height: 55px;
   background-color: skyblue;
+}
+
+.active {
+  color: red;
+  font-size: 22px;
 }
