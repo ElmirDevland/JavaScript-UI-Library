@@ -1,5 +1,5 @@
 import $ from './lib/lib';
 
-$('div').click(function () {
-  console.log($(this).index());
-});
+const div = $('.third').siblings();
+
+console.log(div);
