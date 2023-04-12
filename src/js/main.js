@@ -1,5 +1,15 @@
 import $ from './lib/lib';
 
-const div = $('.third').siblings();
+$('#first').click(() => {
+  $('.container').find('div').eq(0).fadeToggle(600);
+});
 
-console.log(div);
+$('[data-count="second"]').click(() => {
+  $('.container').find('div').eq(1).fadeToggle(600);
+});
+
+$('button')
+  .eq(2)
+  .click(() => {
+    $('.w-500px').fadeToggle(600);
+  });
