@@ -19,47 +19,74 @@
         </button>
         <button class="btn btn-warning m20">Fade out all texts</button>
 
-        <div class="w-500px block-center mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            pariatur fugiat alias quis, nam expedita quos saepe tenetur nemo illo
-            deserunt tempora, magni eveniet? Expedita ullam optio ipsa eum est. Amet
-            magni iure voluptate! Beatae laborum excepturi iste amet odit ex enim
-            dolorum repellendus, aliquid id tempora atque quae voluptatem
-            repudiandae distinctio reprehenderit pariatur corporis reiciendis!
-            Libero, consequatur amet. Excepturi! Recusandae modi eligendi
-            consequatur perspiciatis quod enim ducimus, assumenda vitae, ea odit nam
-            tempora quas beatae incidunt temporibus dignissimos maxime natus
-            repellendus. Aliquid at excepturi quia minima odio cupiditate
-            distinctio! Aliquid consequatur enim id vitae in! Voluptatem quae, dolor
-            id quos suscipit nemo reprehenderit ad corporis doloribus accusamus
-            sequi numquam velit quas dicta accusantium ullam modi ipsa ut nam
-            voluptates. Sed corrupti perferendis eaque sapiente ut magni. Cumque
-            maxime sapiente deserunt eveniet corrupti, vitae illo eum eaque ipsa
-            eius repellendus mollitia qui accusamus dolorem dignissimos ab quaerat.
-            Fugit, molestias asperiores!
+        <!-- Dropdown menu -->
+
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">
+                Dropdown button
+            </button>
+            <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+                <a href="#" class="dropdown-item">Action</a>
+                <a href="#" class="dropdown-item">Action #2</a>
+                <a href="#" class="dropdown-item">Action #3</a>
+            </div>
         </div>
 
-        <div class="w-500px block-center mt-20">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            pariatur fugiat alias quis, nam expedita quos saepe tenetur nemo illo
-            deserunt tempora, magni eveniet? Expedita ullam optio ipsa eum est. Amet
-            magni iure voluptate! Beatae laborum excepturi iste amet odit ex enim
-            dolorum repellendus, aliquid id tempora atque quae voluptatem
-            repudiandae distinctio reprehenderit pariatur corporis reiciendis!
-            Libero, consequatur amet. Excepturi! Recusandae modi eligendi
-            consequatur perspiciatis quod enim ducimus, assumenda vitae, ea odit nam
-            tempora quas beatae incidunt temporibus dignissimos maxime natus
-            repellendus. Aliquid at excepturi quia minima odio cupiditate
-            distinctio! Aliquid consequatur enim id vitae in! Voluptatem quae, dolor
-            id quos suscipit nemo reprehenderit ad corporis doloribus accusamus
-            sequi numquam velit quas dicta accusantium ullam modi ipsa ut nam
-            voluptates. Sed corrupti perferendis eaque sapiente ut magni. Cumque
-            maxime sapiente deserunt eveniet corrupti, vitae illo eum eaque ipsa
-            eius repellendus mollitia qui accusamus dolorem dignissimos ab quaerat.
-            Fugit, molestias asperiores!
+        <!-- Card -->
+
+        <div class="goods d-flex f-space-around">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/20/06/city-2567670__480.jpg" alt="photo"
+                    class="card-img" />
+                <div class="card-body">
+                    <div class="card-title">Card title</div>
+                    <div class="p card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates maiores est dolore placeat.
+                    </div>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/08/01/20/06/city-2567670__480.jpg" alt="photo"
+                    class="card-img" />
+                <div class="card-body">
+                    <div class="card-title">Card title #2</div>
+                    <div class="p card-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptates maiores est dolore placeat.
+                    </div>
+                    <a href="#" class="btn btn-primary">Link to</a>
+                </div>
+            </div>
         </div>
+
+        <!-- Modal -->
+
+        <div class="modal" id="exampleModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button class="close" data-close>
+                        <span>&times;</span>
+                    </button>
+                    <div class="modal-header">
+                        <div class="modal-title">Modal title</div>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod,
+                        facilis velit dolorem quisquam quaerat sed excepturi pariatur
+                        debitis accusantium corporis esse quidem odio iusto eius amet
+                        voluptates, ducimus ad totam.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Save changes</button>
+                        <button class="btn btn-danger" data-close>Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-
     <script src="script.js"></script>
 </body>
 
