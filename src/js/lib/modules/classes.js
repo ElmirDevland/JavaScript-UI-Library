@@ -5,6 +5,7 @@ $.prototype.addClass = function (...classNames) {
     if (this[i].classList && classNames) this[i].classList.add(...classNames);
     else return this;
   }
+  return this;
 };
 
 $.prototype.removeClass = function (...classNames) {
@@ -13,6 +14,7 @@ $.prototype.removeClass = function (...classNames) {
       this[i].classList.remove(...classNames);
     else return this;
   }
+  return this;
 };
 
 $.prototype.toggleClass = function (className) {
@@ -20,4 +22,5 @@ $.prototype.toggleClass = function (className) {
     if (this[i].classList && className) this[i].classList.toggle(className);
     else return this;
   }
+  return this;
 };

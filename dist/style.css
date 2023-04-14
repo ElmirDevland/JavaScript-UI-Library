@@ -236,6 +236,47 @@
   padding: 15px;
 }
 
+.tab {
+  max-width: 700px;
+}
+.tab-panel {
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: none;
+  border-radius: 4px 4px 0 0;
+}
+.tab-item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+}
+.tab-item:first-child {
+  border-radius: 3px 0 0 0;
+}
+.tab-item:last-child {
+  border-right: none;
+}
+.tab-item--active {
+  background-color: rgba(0, 0, 0, 0.125);
+  border-right: none;
+}
+.tab-content {
+  display: none;
+  font-size: 20px;
+  padding: 20px;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.tab-content--active {
+  background-color: rgba(0, 0, 0, 0.125);
+  display: block;
+}
+
 .text-center {
   text-align: center;
 }

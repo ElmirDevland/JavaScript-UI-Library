@@ -1,0 +1,40 @@
+.tab {
+  max-width: 700px;
+  &-panel {
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+  }
+  &-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    cursor: pointer;
+    &:first-child {
+      border-radius: 3px 0 0 0;
+    }
+    &:last-child {
+      border-right: none;
+    }
+    &--active {
+      background-color: rgba(0, 0, 0, 0.125);
+      border-right: none;
+    }
+  }
+  &-content {
+    display: none;
+    font-size: 20px;
+    padding: 20px;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    &--active {
+      background-color: rgba(0, 0, 0, 0.125);
+      display: block;
+    }
+  }
+}
