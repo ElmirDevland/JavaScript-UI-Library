@@ -13,3 +13,5 @@ Creating components for dropdown, product cards and for a modal window.
 Dynamic creation of modal windows.
 
 Creating a tab component.
+
+Creating components for accordion and slider.
