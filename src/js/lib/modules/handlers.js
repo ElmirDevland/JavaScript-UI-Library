@@ -9,7 +9,7 @@ $.prototype.on = function (eventName, callback) {
   return this;
 };
 
-$.prototype.removeEvent = function (eventName, callback) {
+$.prototype.off = function (eventName, callback) {
   if (!eventName || !callback) return this;
 
   for (let i = 0; i < this.length; i++)
