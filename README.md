@@ -69,4 +69,114 @@ A function to execute each time the event is triggered.
 
 > ***This method is a shortcut for ``.on("click", handler)``***
 
-> **If you call the function without an argument, the click on the element will be initialized**
+> **If you call the function without an argument, the click on the element will be initialized.**
+
+# Working with **attributes**
+
+# .setAttr()
+> ***The method takes two arguments, the attribute name and the value for the attribute.***
+
+``.setAttr(attrName, value)``
+
+# .hasAttr()
+> ***The method allows you to check an element for the presence of an attribute. Returns either true or false.***
+
+``.hasAttr(attrName)``
+
+# .getAttr()
+> ***The method allows you to get the value of the attribute passed as an argument***.
+
+``.getAttr(attrName)``
+
+# .removeAttr()
+> ***The method accepts one argument, the name of the attribute to be deleted.***
+
+``.removeAttr(attrName)``
+
+# .toggleAttr()
+> ***The method accepts one argument, the name of the attribute. If the attribute is missing it will be added, if it exists it will be deleted.***
+
+``.toggleAttr(attrName)``
+
+# Methods for working with ***elements***
+
+# .html()
+> ***Get the HTML contents of the first element in the set of matched elements.***
+
+Example:
+```
+<div class="example"> Hello World </div>
+$('.example').html() // Hello World
+```
+
+> ***If an argument is passed to the method, the contents of the element will be replaced with the passed value.***
+
+Example:
+```
+<div class="example"> Hello World </div>
+$('.example').html('Replace text') // <div class="example"> Replace text </div>
+```
+
+# .eq()
+> ***Reduce the set of matched elements to the one at the specified index.***
+
+Example:
+```
+<ul>
+  <li>list item 1</li>
+  <li>list item 2</li>
+  <li>list item 3</li>
+  <li>list item 4</li>
+  <li>list item 5</li>
+</ul>
+
+$('li').eq(2) // <li> list item 3 </li>
+```
+
+# .index()
+> ***Search for a given element from among the matched elements.***
+
+Example:
+```
+<ul>
+  <li id="foo">foo</li>
+  <li id="bar">bar</li>
+  <li id="baz">baz</li>
+</ul>
+
+$('#bar').index() // 1
+```
+
+# .find()
+> ***Get the descendants of each element in the current set of matched elements, filtered by a selector, object or element.***
+
+``.find(selector)``
+
+Example:
+```
+<ul class="level-1">
+  <li class="item-i">I</li>
+  <li class="item-ii">II
+    <ul class="level-2">
+      <li class="item-a">A</li>
+      <li class="item-b">B
+        <ul class="level-3">
+          <li class="item-1">1</li>
+          <li class="item-2">2</li>
+          <li class="item-3">3</li>
+        </ul>
+      </li>
+      <li class="item-c">C</li>
+    </ul>
+  </li>
+  <li class="item-iii">III</li>
+</ul>
+```
+```
+$('.level-3').find('li')
+
+<li class="item-1">1</li>
+<li class="item-2">2</li>
+<li class="item-3">3</li>
+```
+
